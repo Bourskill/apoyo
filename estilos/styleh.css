@@ -1,0 +1,179 @@
+/* BOTONES */
+.codigo-prueba,.up{
+    padding: 10px;
+    position: fixed;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 999;
+    text-align: center;
+}
+.codigo-prueba i,.up i{
+    color: var(--fondo);
+    font-size: 2em;
+}
+.codigo-prueba{
+    right: 15px;
+    bottom: 100px;
+}
+.up{
+    right: 18px;
+    bottom: 30px;
+}
+
+.codigo-prueba:hover, .up:hover{
+    transform: scale(1.1);
+    color: #ff79c6;
+}
+.codigo-prueba:active, .up:active{
+    transform: scale(0.8);
+}
+
+
+/* ENCABEZADO */
+H1{
+    margin-top: 20px;
+    color: var(--font-white);
+}
+
+.introduccion{
+    width: 80%;
+    background: var(--fondo2);
+
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+
+    color: var(--font-white);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.introduccion div{
+    flex-grow: 1;
+}
+
+.gif{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gif img{
+    height: 200px;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+
+/* TABLA DE ETIQUETAS */
+
+.etiquetas{
+    width: 80%;
+
+    margin: 50px auto;
+    margin-top: 50px;
+    padding: 20px;
+
+    color: var(--font-white);
+
+    background: var(--fondo2);
+
+    border-collapse: collapse;
+}
+
+tr,td,th{
+    border: 7px solid var(--fondo);
+}
+th{
+    padding: 30px 0 30px 0;
+}
+
+td{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.etiquetas td:nth-child(1){
+    text-align: center;
+}
+.etiquetas td:nth-child(2) {
+    padding: 20px 10px 20px 10px;
+}
+
+.etiquetas td:nth-child(3) > span{
+    display: block;
+    padding: 15px;
+    margin-right: 130px;
+}
+
+
+
+/* AREA DE PRUEBAS */
+.prueba{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+   
+    color: var(--font-white);
+}
+
+.prueba div{
+   flex-grow: 1;
+   border-radius: 10px;
+   max-height: 200px;
+}
+
+#preview{
+    padding-left: 30px;
+    overflow: auto;
+}
+.copy-button{
+    height: 100%;
+    width: 110px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    background:rgb(20, 18, 39);
+    border: none;
+}
+
+.copy-button i, .copy-button span {
+    color: var(--font-white);
+}
+
+.copy-button:hover{
+    background: rgb(0, 132, 255);
+}
+
+@media (max-width: 720px){
+    .etiquetas{
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .etiquetas td:nth-child(3) > span{
+        display: block;
+        padding: 15px;
+        margin-right: 70px;
+    }
+    .etiquetas button {
+        width: 70px;
+        
+    }
+    .etiquetas button span{
+        display: none;
+    }
+}
+
