@@ -56,11 +56,13 @@ body{
     border-radius: 20px;
 
     transition: 0.2s;
+    border: none;
+    outline: none;
 }
 
 @media (max-width: 720px){
     .contenedor button{
-        max-height: 50px;
+        max-height: 50px !important;
     }
 }
 
