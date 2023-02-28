@@ -7,8 +7,103 @@
     <title>css</title>
 
     <link rel="stylesheet" href="../../estilos/main.css">
+    <link rel="stylesheet" href="../../estilos/material-css/style-css.css">
 </head>
 <body>
+
+    <center>
+        <h1>CSS BASICO</h1>
+    </center>
+    
+    <table class="propiedades">
+        <thead>
+          <tr>
+            <th>Propiedad</th>
+            <th>Explicación</th>
+          </tr>
+        </thead>
+        <tbody class="test">
+          <tr>
+            <td><span>color</span></td>
+            <td>Establece el color del texto.</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td><strong> 1:</strong> Cambiar el color del texto de un encabezado:</td>
+                  <td><code>h1 { color: blue; }</code></td>
+                </tr>
+                <tr>
+                  <td><strong> 2:</strong> Cambiar el color del texto de un párrafo al pasar el cursor sobre él:</td>
+                  <td><code>p:hover { color: red; }</code></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><span>font-size</span></td>
+            <td>Establece el tamaño de la fuente.</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td><strong> 1:</strong> Establecer un tamaño de fuente específico para un párrafo:</td>
+                  <td><code>p { font-size: 18px; }</code></td>
+                </tr>
+                <tr>
+                  <td><strong> 2:</strong> Usar una unidad relativa para establecer el tamaño de fuente de un encabezado:</td>
+                  <td><code>h1 { font-size: 2.5rem; }</code></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><span>font-family</span></td>
+            <td>Establece el tipo de fuente.</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table>
+                <tr>
+                    <td><strong> 1:</strong> Usar una fuente personalizada en un sitio web:</td>
+                    <td><code>
+                                @font-face {
+                                font-family: "MiFuente";
+                                src: url("ruta/a/mifuente.ttf");
+                                } <br>
+                                body {
+                                font-family: "MiFuente", sans-serif;
+                                }
+                    </code></td>
+                </tr>
+
+                <tr>
+                <td><strong> 2:</strong> Usar una fuente predeterminada en un párrafo:</td>
+                <td><code>p { font-family: Arial, sans-serif; }</code></td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><span>background-color</span></td>
+            <td>Establece el color de fondo.</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+        <table>
+        <tr>
+            <td><strong> 1:</strong> Establecer un color de fondo para un encabezado:</td>
+            <td><code>h1 { background-color: yellow; }</code></td>
+        </tr>
+        <tr>
+            <td><strong> 2:</strong> Establecer un color de fondo para un div:</td>
+            <td><code>div { background-color: green; }</code></td>
+        </tr>
+       </tbody> 
+      </table>
+        
     
 </body>
 </html>

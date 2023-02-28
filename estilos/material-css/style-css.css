@@ -1,0 +1,51 @@
+h1{
+    color: var(--font-white);
+    margin-top: 50px ;
+}
+
+/* TABLA DE PROPIEDADES */
+.propiedades{
+    width: 80%;
+
+    margin: 50px auto;
+    margin-top: 50px;
+    padding: 20px;
+
+    color: var(--font-white);
+
+    background: var(--fondo2);
+
+    border-collapse: collapse;
+}
+
+
+td,th{
+    border: 5px solid var(--fondo);
+}
+th{
+    padding: 30px 0 30px 0;
+}
+
+td{
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.propiedades table{
+    width: 100%;
+    background: var(--fondo);
+    border-collapse: collapse;
+}
+
+.propiedades table td{
+    width: 50%;
+}
+
+.test > tr:nth-child(odd){
+    text-align: center;
+}
+.test > tr:nth-child(odd) :first-child{
+    background:var(--rojo-html-1);
+}
