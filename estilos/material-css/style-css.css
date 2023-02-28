@@ -1,10 +1,10 @@
-h1{
+h1 {
     color: var(--font-white);
-    margin-top: 50px ;
+    margin-top: 50px;
 }
 
 /* TABLA DE PROPIEDADES */
-.propiedades{
+.propiedades {
     width: 80%;
 
     margin: 50px auto;
@@ -19,33 +19,43 @@ h1{
 }
 
 
-td,th{
+td,
+th {
     border: 5px solid var(--fondo);
 }
-th{
+
+th {
     padding: 30px 0 30px 0;
 }
 
-td{
+td {
     padding: 10px;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.propiedades table{
+.propiedades table {
     width: 100%;
     background: var(--fondo);
     border-collapse: collapse;
 }
 
-.propiedades table td{
+.propiedades table td {
     width: 50%;
 }
 
-.test > tr:nth-child(odd){
+.test>tr:nth-child(odd) {
     text-align: center;
 }
-.test > tr:nth-child(odd) :first-child{
-    background:var(--rojo-html-1);
+
+.test>tr:nth-child(odd) :first-child {
+    background: var(--rojo-html-1);
+    width: 40%; 
+}
+
+@media (max-width: 720px) {
+    .propiedades {
+        width: 95%;
+    }
 }

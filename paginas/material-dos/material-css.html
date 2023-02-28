@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,69 @@
     <link rel="stylesheet" href="../../estilos/main.css">
     <link rel="stylesheet" href="../../estilos/material-css/style-css.css">
 </head>
+
 <body>
 
     <center>
         <h1>CSS BASICO</h1>
     </center>
-    
+
     <table class="propiedades">
         <thead>
-          <tr>
-            <th>Propiedad</th>
-            <th>Explicación</th>
-          </tr>
+            <tr>
+                <th>Propiedad</th>
+                <th>Explicación</th>
+            </tr>
         </thead>
         <tbody class="test">
-          <tr>
-            <td><span>color</span></td>
-            <td>Establece el color del texto.</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <table>
-                <tr>
-                  <td><strong> 1:</strong> Cambiar el color del texto de un encabezado:</td>
-                  <td><code>h1 { color: blue; }</code></td>
-                </tr>
-                <tr>
-                  <td><strong> 2:</strong> Cambiar el color del texto de un párrafo al pasar el cursor sobre él:</td>
-                  <td><code>p:hover { color: red; }</code></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td><span>font-size</span></td>
-            <td>Establece el tamaño de la fuente.</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <table>
-                <tr>
-                  <td><strong> 1:</strong> Establecer un tamaño de fuente específico para un párrafo:</td>
-                  <td><code>p { font-size: 18px; }</code></td>
-                </tr>
-                <tr>
-                  <td><strong> 2:</strong> Usar una unidad relativa para establecer el tamaño de fuente de un encabezado:</td>
-                  <td><code>h1 { font-size: 2.5rem; }</code></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td><span>font-family</span></td>
-            <td>Establece el tipo de fuente.</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <table>
-                <tr>
-                    <td><strong> 1:</strong> Usar una fuente personalizada en un sitio web:</td>
-                    <td><code>
+            <tr>
+                <td><span>color</span></td>
+                <td>Establece el color del texto.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Cambiar el color del texto de un encabezado:</td>
+                            <td><code>h1 { color: blue; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Cambiar el color del texto de un párrafo al pasar el cursor sobre
+                                él:</td>
+                            <td><code>p:hover { color: red; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><span>font-size</span></td>
+                <td>Establece el tamaño de la fuente.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un tamaño de fuente específico para un párrafo:</td>
+                            <td><code>p { font-size: 18px; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar una unidad relativa para establecer el tamaño de fuente de un
+                                encabezado:</td>
+                            <td><code>h1 { font-size: 2.5rem; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><span>font-family</span></td>
+                <td>Establece el tipo de fuente.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Usar una fuente personalizada en un sitio web:</td>
+                            <td><code>
                                 @font-face {
                                 font-family: "MiFuente";
                                 src: url("ruta/a/mifuente.ttf");
@@ -77,33 +81,394 @@
                                 font-family: "MiFuente", sans-serif;
                                 }
                     </code></td>
-                </tr>
+                        </tr>
 
-                <tr>
-                <td><strong> 2:</strong> Usar una fuente predeterminada en un párrafo:</td>
-                <td><code>p { font-family: Arial, sans-serif; }</code></td>
-                </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td><span>background-color</span></td>
-            <td>Establece el color de fondo.</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-        <table>
-        <tr>
-            <td><strong> 1:</strong> Establecer un color de fondo para un encabezado:</td>
-            <td><code>h1 { background-color: yellow; }</code></td>
-        </tr>
-        <tr>
-            <td><strong> 2:</strong> Establecer un color de fondo para un div:</td>
-            <td><code>div { background-color: green; }</code></td>
-        </tr>
-       </tbody> 
-      </table>
-        
-    
+                        <tr>
+                            <td><strong> 2:</strong> Usar una fuente predeterminada en un párrafo:</td>
+                            <td><code>p { font-family: Arial, sans-serif; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><span>background-color</span></td>
+                <td>Establece el color de fondo.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un color de fondo para un encabezado:</td>
+                            <td><code>h1 { background-color: yellow; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Establecer un color de fondo para un div:</td>
+                            <td><code>div { background-color: green; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>background-image</td>
+                <td>Establece una imagen de fondo.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Usar una imagen de fondo en un elemento:</td>
+                            <td><code>
+                                    div {
+                                    background-image: url("ruta/a/mi-imagen.jpg");
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar varias imágenes de fondo en un elemento:</td>
+                            <td>
+                                <code>
+                                    div {
+                                    background-image: url("ruta/a/mi-imagen1.jpg"), url("ruta/a/mi-imagen2.jpg");
+                                    background-repeat: no-repeat, repeat-y;
+                                    background-position: center center, bottom right;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Establece el espacio de relleno dentro del borde.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un espacio de relleno para un elemento:</td>
+                            <td><code>div { padding: 10px; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar valores diferentes de espacio de relleno para cada lado
+                                de un elemento:</td>
+                            <td><code>div { padding: 10px 20px 30px 40px; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Establece el espacio fuera del borde.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un espacio de margen para un elemento:</td>
+                            <td><code>div { margin: 10px; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar valores diferentes de espacio de margen para cada lado
+                                de un elemento:</td>
+                            <td><code>div { margin: 10px 20px 30px 40px; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Establece el borde de un elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un borde con un ancho, estilo y color
+                                específicos:</td>
+                            <td><code>div { border: 2px solid red; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar valores diferentes de ancho, estilo y color para cada
+                                lado del borde de un elemento:</td>
+                            <td><code>div { border-top: 1px solid black; border-right: 2px dotted blue; border-bottom: 3px dashed green; border-left: 4px double red; }</code>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <td>text-align</td>
+            <td>Establece la alineación horizontal del texto dentro del elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Alinear el texto al centro de un elemento:</td>
+                            <td><code>div { text-align: center; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Alinear el texto a la derecha de un elemento:</td>
+                            <td><code>div { text-align: right; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>Establece la decoración del texto, como subrayado, tachado, etc.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Subrayar un texto:</td>
+                            <td><code>div { text-decoration: underline; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Tachar un texto:</td>
+                            <td><code>div { text-decoration: line-through; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>text-transform</td>
+                <td>Establece la transformación del texto, como mayúsculas, minúsculas, etc.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Convertir un texto en mayúsculas:</td>
+                            <td><code>div { text-transform: uppercase; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Convertir un texto en minúsculas:</td>
+                            <td><code>div { text-transform: lowercase; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>Establece la altura de línea del texto dentro del elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer una altura de línea de 1.5 para un texto:</td>
+                            <td><code>div { line-height: 1.5; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar un valor de altura de línea relativo para un texto:
+                            </td>
+                            <td><code>div { line-height: 1.2em; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>Establece el tipo de visualización del elemento, como bloque, en línea, en línea-block, etc.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un elemento como bloque:</td>
+                            <td><code>div { display: block; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Establecer un elemento como en línea:</td>
+                            <td><code>div { display: inline; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>Establece la posición flotante del elemento, para alinear elementos en la página.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Flotar un elemento a la izquierda:</td>
+                            <td><code>div { float: left; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Flotar un elemento a la derecha:</td>
+                            <td><code>div { float: right; }</code></td>
+                        </tr>
+                    </table>
+            </tr>
+            <tr>
+                <td>position</td>
+                <td>Establece el tipo de posición del elemento, como estática, relativa, absoluta o fija.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Establecer un elemento en una posición absoluta:
+                            </td>
+                            <td><code>div { position: absolute; top: 10px; left: 20px; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Establecer un elemento en una posición fija:
+                            </td>
+                            <td><code>div { position: fixed; top: 10px; left: 20px; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>overflow</td>
+                <td>Establece cómo manejar el contenido que desborda el tamaño del elemento, como ocultarlo,
+                    mostrar barras de desplazamiento o mostrarlo en el exterior del elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Ocultar el contenido que desborda el tamaño del
+                                elemento:</td>
+                            <td><code>div { overflow: hidden; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Mostrar barras de desplazamiento cuando el
+                                contenido desborda el tamaño del elemento:</td>
+                            <td><code>div { overflow: auto; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><code>font-weight</code></td>
+                <td>Establece el grosor de la fuente de un elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong> 1:</strong> Cambiar el grosor de la fuente de un párrafo:</td>
+                            <td><code>
+                                        p {
+                                            font-weight: bold;
+                                        }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong> 2:</strong> Usar diferentes grosores de fuente para diferentes
+                                elementos:</td>
+                            <td><code>
+                                        h1 {
+                                            font-weight: 700;
+                                        }
+                                        p {
+                                            font-weight: normal;
+                                        }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>text-overflow</td>
+                <td>Especifica cómo se muestra el contenido cuando desborda el tamaño del contenedor y se aplica un
+                    "ellipsis" al final.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong>1:</strong> Utilizando el valor "ellipsis" para truncar el contenido que
+                                desborda:</td>
+                            <td><code>p { width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>2:</strong> Usando el valor "clip" para simplemente recortar el contenido
+                                que desborda:</td>
+                            <td><code>p { width: 200px; white-space: nowrap; overflow: hidden; text-overflow: clip; }</code>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>background</td>
+                <td>Una propiedad abreviada para establecer el fondo de un elemento. Permite establecer todas las
+                    propiedades de fondo en una sola declaración.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong>1:</strong> Establecer un color de fondo y una imagen de fondo:</td>
+                            <td><code>div { background: #FFFFFF url(bg.png) no-repeat top right; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2:</strong> Establecer un gradiente de fondo:</td>
+                            <td><code>div { background: linear-gradient(to bottom, #FFFFFF, #000000); }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>cursor</td>
+                <td>Especifica el tipo de cursor que se muestra cuando el cursor del ratón está sobre un elemento.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong>1:</strong> Cambiar el cursor a una mano para indicar que el elemento es un
+                                enlace:</td>
+                            <td><code>a:hover { cursor: pointer; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2:</strong> Cambiar el cursor a una lupa para indicar que el elemento es
+                                ampliable:</td>
+                            <td><code>img:hover { cursor: zoom-in; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>text-shadow</td>
+                <td>Agrega una sombra al texto.</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><strong>1:</strong> Agregar una sombra gris al texto:</td>
+                            <td><code>h1 { text-shadow: 2px 2px 2px #888888; }</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2:</strong> Agregar una sombra más grande y de color diferente al texto:</td>
+                            <td><code>h1 { text-shadow: 5px 5px 5px #000000; }</code></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
 </body>
+
 </html>
