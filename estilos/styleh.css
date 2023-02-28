@@ -158,18 +158,19 @@ td{
 }
 
 @media (max-width: 720px){
+    .introduccion{
+        width: 95%;
+    }
     .etiquetas{
         width: 100%;
     }
-}
-@media (max-width: 420px){
     .etiquetas td:nth-child(3) > span{
         display: block;
         padding: 15px;
-        margin-right: 70px;
+        margin-right: 25%;
     }
     .etiquetas button {
-        width: 70px;
+        width:20%;
         
     }
     .etiquetas button span{

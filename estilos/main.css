@@ -18,7 +18,6 @@ html{
 body{
     background: var(--fondo);
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 /* Define los estilos de la barra de desplazamiento personalizada */
