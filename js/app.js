@@ -35,7 +35,7 @@ function actualizarVistaPrevia() {
     copyNode.querySelector('.copy-button').addEventListener('click', (e) => {
 
         var boton = e.target.querySelector('.tooltip');
-        boton.textContent = 'Copiado!';
+        boton.textContent = '¡Copiado!';
             setTimeout(function() {
                 boton.innerHTML = "Copiar";
             }, 1000);
