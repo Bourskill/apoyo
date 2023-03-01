@@ -44,3 +44,5 @@ function actualizarVistaPrevia() {
     });
     cell.parentNode.replaceChild(copyNode, cell);
   });
+
+

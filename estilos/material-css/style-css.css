@@ -53,9 +53,77 @@ td {
     background: var(--rojo-html-1);
     width: 40%; 
 }
+.test>tr:nth-child(odd) :first-child span{
+    color: black;
+}
+
 
 @media (max-width: 720px) {
     .propiedades {
         width: 95%;
     }
 }
+
+#search-bar {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  #search-bar:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #search-button {
+    width: 80px;
+    height: 40px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #search-button:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Estilos para las sugerencias */
+  
+  #search-results {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  #search-results li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #search-results li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  #search-results li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
