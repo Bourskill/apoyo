@@ -9,23 +9,45 @@
 
     <link rel="stylesheet" href="../../estilos/main.css">
     <link rel="stylesheet" href="../../estilos/material-css/style-css.css">
+
+     <!-- INTEGRACION DE ICONOS DE FONTAWESOME POR CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <body>
 
+    <button onclick="location.href='#titulo'" class="up">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </button>
+
     <center>
-        <h1>CSS BASICO</h1>
+        <h1 id="titulo">CSS BASICO</h1>
     </center>
+    <div class="b-busqueda">
+        <div class="barra">
+            <input type="text" id="search-bar" placeholder="Buscar...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <ul id="search-results"></ul>
+    </div>
     
-    <input type="text" id="search-bar" placeholder="Buscar...">
-    <button id="search-button">Buscar</button>
-    <ul id="search-results"></ul>
 
     <table class="propiedades">
         <thead>
             <tr>
-                <th>Propiedad</th>
-                <th>Explicación</th>
+                <th>
+                    <h3>
+                        Propiedad/ <br>
+                        Ejemplos
+                    </h3>
+                </th>
+                <th> 
+                    <h3>
+                        Explicación/ <br>
+                        Sintaxís
+                    </h3>
+                </th>
             </tr>
         </thead>
         <tbody class="test">

@@ -1,35 +1,3 @@
-/* BOTONES */
-.codigo-prueba,.up{
-    padding: 10px;
-    position: fixed;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s;
-    z-index: 999;
-    text-align: center;
-}
-.codigo-prueba i,.up i{
-    color: var(--fondo);
-    font-size: 2em;
-}
-.codigo-prueba{
-    right: 15px;
-    bottom: 100px;
-}
-.up{
-    right: 18px;
-    bottom: 30px;
-}
-
-.codigo-prueba:hover, .up:hover{
-    transform: scale(1.1);
-    color: #ff79c6;
-}
-.codigo-prueba:active, .up:active{
-    transform: scale(0.8);
-}
-
-
 /* ENCABEZADO */
 H1{
     margin-top: 20px;
