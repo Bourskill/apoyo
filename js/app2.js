@@ -37,17 +37,27 @@ function search() {
   for (let i = 0; i < filteredSpans.length; i++) {
     const spanText = filteredSpans[i].textContent.toLowerCase();
     if (spanText === searchText) {
-      filteredSpans[i].scrollIntoView();
+
+      const rect = filteredSpans[i].getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetTop = rect.top + scrollTop - 100;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      
       closeSearch();
       return;
+    } else{
+      closeSearch();
     }
   }
   alert('Coincidencia no encontrada');
 }
+
 function closeSearch() {
-  document.getElementById('search-results').innerHTML = '';
-  document.getElementById('search-bar').value = '';
-  selectedIndex = -1;
+  setTimeout(() => {
+    document.getElementById('search-results').innerHTML = '';
+    document.getElementById('search-bar').value = '';
+    selectedIndex = -1;
+  }, 300);
 }
 
 
@@ -70,7 +80,10 @@ searchBar.addEventListener('keydown', (event) => {
     event.preventDefault();
     filterSpans();
     if (filteredSpans.length > 0) {
-      filteredSpans[0].scrollIntoView();
+      const rect = filteredSpans[0].getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetTop = rect.top + scrollTop - 100;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
     } else {
       alert('Coincidencia no encontrada');
     }

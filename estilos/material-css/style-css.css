@@ -1,5 +1,6 @@
 
 #titulo{
+  scroll-margin-top:  50px ;
   color: var(--font-white);
   margin-top: 50px;
 }
