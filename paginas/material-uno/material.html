@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
 
-    <!-- CDN DEL EDITOR DE CODIGO EN EL AREA DE PRUEBAS Y SU RESPECTIVO TEMA "DRACULA" -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/theme/dracula.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/scroll/simplescrollbars.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/xml/xml.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/javascript/javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/css/css.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/htmlmixed/htmlmixed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/edit/closebrackets.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/edit/closetag.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/scroll/simplescrollbars.min.js"></script>
-   
+  <!-- CDN DEL EDITOR DE CODIGO EN EL AREA DE PRUEBAS Y SU RESPECTIVO TEMA "DRACULA" -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/theme/dracula.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/scroll/simplescrollbars.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/edit/closebrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/edit/closetag.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/scroll/simplescrollbars.min.js"></script>
 
-    <!-- INTEGRACION DE ICONOS DE FONTAWESOME POR CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="../../estilos/main.css">
-    <link rel="stylesheet" href="../../estilos/material-html/style-html.css">
+
+  <!-- INTEGRACION DE ICONOS DE FONTAWESOME POR CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="../../estilos/main.css">
+  <link rel="stylesheet" href="../../estilos/material-html/style-html.css">
 
 </head>
+
 <body>
-  
+
   <!-- BOTONES -->
   <button onclick="location.href='#codigo'" class="codigo-prueba">
     <i class="fa-solid fa-code"></i>
@@ -38,318 +43,345 @@
   <button onclick="location.href='#titulo'" class="up">
     <i class="fa-solid fa-circle-chevron-up"></i>
   </button>
-    
-    <center>
-        <h1 id="titulo"><i class="fa-brands fa-html5"></i>HTML</h1>
-    </center>
 
-    <div class="introduccion">
-      <div class="contenido">
-            <h3>introduccion</h3>
-            <br>
-            <p>¡Hola! puedo decirte que HTML es un lenguaje que usamos para crear páginas web. Es como un "esqueleto" de la página que nos ayuda a organizar todo el contenido que queremos mostrar. <br><br>
-                Imagínate que estás construyendo una casa: HTML sería como el armazón de la casa, que sirve de soporte para todo lo que quieres poner dentro, como las habitaciones, la cocina, los baños, etc.<br><br>
-                Los elementos de HTML son como bloques de construcción que usamos para crear nuestra página web. Cada uno tiene una etiqueta de apertura y una etiqueta de cierre, como si fueran un par de corchetes &lt; &gt;. Por ejemplo, para escribir un párrafo, usamos la etiqueta &lt;p&gt; al principio y &lt;/p&gt; al final.<br><br>
-                También tenemos elementos que nos ayudan a estructurar el contenido de la página, como el encabezado (head) y el cuerpo (body). El encabezado contiene información importante sobre la página, como el título y enlaces a otros archivos, mientras que el cuerpo es donde ponemos todo el contenido que queremos mostrar, como texto, imágenes, videos, etc.<br><br>
-                En resumen, HTML es un lenguaje muy importante para crear páginas web, que nos ayuda a organizar todo el contenido que queremos mostrar. ¡Es como construir una casa en línea!
-            </p>
-      </div>
-       <div class="gif">
-            <img src="https://www.nobledesktop.com/image/classExamples/html-intro/html-intro.gif" alt="">
-            <img src="https://thumbs.gfycat.com/AffectionateSeparateGazelle-size_restricted.gif" alt="">
-        </div>
+  <center>
+    <h1 id="titulo"><i class="fa-brands fa-html5"></i>HTML</h1>
+  </center>
+
+  <div class="introduccion">
+    <div class="contenido">
+      <h3>introduccion</h3>
+      <br>
+      <p>¡Hola! puedo decirte que HTML es un lenguaje que usamos para crear páginas web. Es como un "esqueleto" de la
+        página que nos ayuda a organizar todo el contenido que queremos mostrar. <br><br>
+        Imagínate que estás construyendo una casa: HTML sería como el armazón de la casa, que sirve de soporte para todo
+        lo que quieres poner dentro, como las habitaciones, la cocina, los baños, etc.<br><br>
+        Los elementos de HTML son como bloques de construcción que usamos para crear nuestra página web. Cada uno tiene
+        una etiqueta de apertura y una etiqueta de cierre, como si fueran un par de corchetes &lt; &gt;. Por ejemplo,
+        para escribir un párrafo, usamos la etiqueta &lt;p&gt; al principio y &lt;/p&gt; al final.<br><br>
+        También tenemos elementos que nos ayudan a estructurar el contenido de la página, como el encabezado (head) y el
+        cuerpo (body). El encabezado contiene información importante sobre la página, como el título y enlaces a otros
+        archivos, mientras que el cuerpo es donde ponemos todo el contenido que queremos mostrar, como texto, imágenes,
+        videos, etc.<br><br>
+        En resumen, HTML es un lenguaje muy importante para crear páginas web, que nos ayuda a organizar todo el
+        contenido que queremos mostrar. ¡Es como construir una casa en línea!
+      </p>
     </div>
+    <div class="gif">
+      <img src="https://www.nobledesktop.com/image/classExamples/html-intro/html-intro.gif" alt="">
+      <img src="https://thumbs.gfycat.com/AffectionateSeparateGazelle-size_restricted.gif" alt="">
+    </div>
+  </div>
 
-    <template id="copy-template">
-      <td class="cell">
-        <span class="cell-text"></span>
-        <button class="copy-button">
-          <i class="fa-regular fa-clipboard"></i>
-          <span class="tooltip">Copiar</span>
-        </button>
+  <template id="copy-template">
+    <td class="cell">
+      <span class="cell-text"></span>
+      <button class="copy-button">
+        <i class="fa-regular fa-clipboard"></i>
+        <span class="tooltip">Copiar</span>
+      </button>
+    </td>
+  </template>
+
+  <!-- TABLA DE ETIQUETAS -->
+  <table class="etiquetas">
+    <tr>
+      <th>
+        <h3>Etiqueta</h3>
+      </th>
+      <th>
+        <h3>Explicación</h3>
+      </th>
+      <th>
+        <h3>Ejemplos</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>&lt;html&gt;</td>
+      <td>Define el inicio y el final del documento HTML</td>
+      <td>&lt;html&gt;...&lt;/html&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>Contiene información sobre el documento HTML</td>
+      <td>&lt;head&gt;...&lt;/head&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;</td>
+      <td>Define el título del documento HTML</td>
+      <td>&lt;title&gt;Mi página web&lt;/title&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;body&gt;</td>
+      <td>Contiene el contenido visible del documento HTML</td>
+      <td>&lt;body&gt;...&lt;/body&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;h1&gt;...&lt;h6&gt;</td>
+      <td>Define encabezados de diferentes niveles</td>
+      <td>&lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;<br>&lt;h2&gt;Encabezado de nivel 2&lt;/h2&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;p&gt;</td>
+      <td>Define un párrafo</td>
+      <td>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;a&gt;</td>
+      <td>Define un enlace</td>
+      <td>&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;img&gt;</td>
+      <td>Define una imagen</td>
+      <td>&lt;img src="mi_imagen.png" alt="Descripción de la imagen"&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;</td>
+      <td>Define una lista sin orden</td>
+      <td>&lt;ul&gt;<br>
+        &lt;li&gt;Elemento 1&lt;/li&gt;<br>
+        &lt;li&gt;Elemento 2&lt;/li&gt;<br>
+        &lt;/ul&gt;
       </td>
-    </template>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>Define una lista ordenada</td>
+      <td>
+        &lt;ol&gt;<br>
+        &lt;li&gt;Primer elemento&lt;/li&gt;<br>
+        &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
+        &lt;/ol&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;div&gt;</td>
+      <td>Define una sección de la página que se puede estilizar con CSS o manipular con JavaScript.</td>
+      <td>
+        &lt;div id="contenedor"&gt;Contenido aquí&lt;/div&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;span&gt;</td>
+      <td>Define una sección de texto que se puede estilizar con CSS o manipular con JavaScript.</td>
+      <td>
+        &lt;p&gt;Este es un texto de ejemplo con un &lt;span style="color: red"&gt;texto rojo&lt;/span&gt;
+        dentro.&lt;/p&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;br&gt;</td>
+      <td>Crea una línea nueva dentro de un párrafo.</td>
+      <td>
+        &lt;p&gt;Este es un párrafo.&lt;br&gt;Esta es una nueva línea dentro del mismo párrafo.&lt;/p&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;hr&gt;</td>
+      <td>Crea una línea horizontal que separa secciones de la página.</td>
+      <td>
+        &lt;h2&gt;Sección 1&lt;/h2&gt; <br>
+        &lt;p&gt;Contenido de la sección 1.&lt;/p&gt; <br>
+        &lt;hr&gt; <br>
+        &lt;h2&gt;Sección 2&lt;/h2&gt; <br>
+        &lt;p&gt;Contenido de la sección 2.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;strong&gt;</td>
+      <td>Hace que el texto sea más enfático o importante.</td>
+      <td>
+        &lt;p&gt;Este es un texto &lt;strong&gt;importante&lt;/strong&gt;.&lt;/p&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;em&gt;</td>
+      <td>Hace que el texto sea enfático o destacado.</td>
+      <td>
+        &lt;p&gt;Este es un texto &lt;em&gt;destacado&lt;/em&gt;.&lt;/p&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;blockquote&gt;</td>
+      <td>Crea una cita de texto que se muestra en un bloque separado.</td>
+      <td>&lt;blockquote&gt;Este es un texto citado.&lt;/blockquote&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;cite&gt;</td>
+      <td>Indica la fuente de una cita.</td>
+      <td>&lt;blockquote&gt;Este es un texto citado. &lt;cite&gt;Autor de la cita&lt;/cite&gt;&lt;/blockquote&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;form&gt;</td>
+      <td>Crea un formulario para que los usuarios ingresen datos o envíen información al servidor.</td>
+      <td>
+        &lt;form action="procesar.php" method="POST"&gt;<br>
+        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt; <br>
+        &lt;input type="text" id="nombre" name="nombre"&gt; <br>
+        &lt;input type="submit" value="Enviar"&gt; <br>
+        &lt;/form&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;input&gt;</td>
+      <td>Crea un campo de entrada de formulario para que los usuarios ingresen datos.</td>
+      <td>
+        &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;<br>
+        &lt;input type="email" id="correo" name="correo"&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;textarea&gt;</td>
+      <td>Crea un campo de entrada de formulario para que los usuarios ingresen texto largo.</td>
+      <td>
+        &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt; <br>
+        &lt;textarea id="mensaje" name="mensaje"&gt;&lt;/textarea&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;button&gt;</td>
+      <td>Crea un botón que se puede hacer clic para realizar una acción.</td>
+      <td>&lt;button type="button" onclick="alert('Hola mundo!')"&gt;Haz clic aquí&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;table&gt;</td>
+      <td>Crea una tabla con filas y columnas.</td>
+      <td>
+        &lt;table&gt; <br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Celda 1&lt;/td&gt;<br>
+        &lt;td&gt;Celda 2&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;thead&gt;</td>
+      <td>Crea la sección de encabezado de una tabla.</td>
+      <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;tbody&gt;</td>
+      <td>Crea la sección de cuerpo de una tabla.</td>
+      <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;tfoot&gt;</td>
+      <td>Crea la sección de pie de una tabla.</td>
+      <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;/tr&gt; &lt;/tbody&gt; &lt;tfoot&gt; &lt;tr&gt; &lt;td&gt;Total&lt;/td&gt; &lt;td&gt;$100&lt;/td&gt;
+        &lt;/tr&gt; &lt;/tfoot&gt; &lt;/table&gt;</td>
+    </tr>
+    <td>&lt;th&gt;</td>
+    <td>Crea una celda de encabezado en una tabla.</td>
+    <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt;
+      &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt;
+      &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;col&gt;</td>
+      <td>Define las propiedades de una o varias columnas de una tabla.</td>
+      <td>&lt;table&gt; &lt;colgroup&gt; &lt;col span="2" style="background-color:red;"&gt; &lt;/colgroup&gt; &lt;tr&gt;
+        &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;colgroup&gt;</td>
+      <td>Agrupa las etiquetas &lt;col&gt; para definir las propiedades de varias columnas de una tabla.</td>
+      <td>&lt;table&gt; &lt;colgroup&gt; &lt;col span="2" style="background-color:red;"&gt; &lt;/colgroup&gt; &lt;tr&gt;
+        &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;caption&gt;</td>
+      <td>Define el título o leyenda de una tabla.</td>
+      <td>&lt;table&gt; &lt;caption&gt;Mi tabla&lt;/caption&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda
+        2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>article</td>
+      <td>Define un artículo independiente dentro de una página web</td>
+      <td>
+        &lt;article&gt;
+        &lt;h2h2&gt;Título del artículo &lt;/h2&gt;
+        &lt;ph2&gt;Contenido del artículo &lt;/p&gt;
+        &lt;/article&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>section</td>
+      <td>Define una sección lógica dentro de una página web</td>
+      <td>
+        &lt;section&gt;
+        &lt;h2>Título de la sección &lt;/h2&gt;
+        &lt;p>Contenido de la sección &lt;/p&gt;
+        &lt;/section&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>aside</td>
+      <td>Define un contenido adicional relacionado con el contenido principal de una página web</td>
+      <td>
+        &lt;article&gt;
+        &lt;h2>Título del artículo &lt;/h2&gt;
+        &lt;p>Contenido del artículo &lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;
+        &lt;h3>Contenido adicional &lt;/h3&gt;
+        &lt;p>Contenido relacionado con el artículo &lt;/p&gt;
+        &lt;/aside&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>footer</td>
+      <td>Define la sección de pie de página de una página web</td>
+      <td>
+        &lt;footer&gt;
+        &lt;p>Derechos de autor © 2023 - Mi sitio web &lt;/p&gt;
+        &lt;/footer&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>Define el contenido principal de una página web</td>
+      <td>
+        &lt;main&gt;
+        &lt;h1&gt;Título de la página &lt;/h1&gt;
+        &lt;p&gt;Contenido principal de la página &lt;/p&gt;
+        &lt;/main&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>nav</td>
+      <td>Define un grupo de enlaces de navegación</td>
+      <td>
+        &lt;nav&gt;
+        &lt;ul&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Inicio &lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Acerca de &lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#"&gt;Contacto &lt;/a&gt; &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/nav&gt;
+      </td>
+    </tr>
 
-    <!-- TABLA DE ETIQUETAS -->
-    <table class="etiquetas">
-        <tr>
-          <th><h3>Etiqueta</h3></th>
-          <th><h3>Explicación</h3></th>
-          <th><h3>Ejemplos</h3></th>
-        </tr>
-        <tr>
-          <td>&lt;html&gt;</td>
-          <td>Define el inicio y el final del documento HTML</td>
-          <td>&lt;html&gt;...&lt;/html&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;head&gt;</td>
-          <td>Contiene información sobre el documento HTML</td>
-          <td>&lt;head&gt;...&lt;/head&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;title&gt;</td>
-          <td>Define el título del documento HTML</td>
-          <td>&lt;title&gt;Mi página web&lt;/title&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;body&gt;</td>
-          <td>Contiene el contenido visible del documento HTML</td>
-          <td>&lt;body&gt;...&lt;/body&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;h1&gt;...&lt;h6&gt;</td>
-          <td>Define encabezados de diferentes niveles</td>
-          <td>&lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;<br>&lt;h2&gt;Encabezado de nivel 2&lt;/h2&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;p&gt;</td>
-          <td>Define un párrafo</td>
-          <td>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;a&gt;</td>
-          <td>Define un enlace</td>
-          <td>&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;img&gt;</td>
-          <td>Define una imagen</td>
-          <td>&lt;img src="mi_imagen.png" alt="Descripción de la imagen"&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;ul&gt;</td>
-          <td>Define una lista sin orden</td>
-            <td>&lt;ul&gt;<br>
-              &lt;li&gt;Elemento 1&lt;/li&gt;<br>
-              &lt;li&gt;Elemento 2&lt;/li&gt;<br>
-              &lt;/ul&gt;
-            </td>
-        </tr>
-        <tr>
-          <td>&lt;ol&gt;</td>
-          <td>Define una lista ordenada</td>
-          <td>
-            &lt;ol&gt;<br>
-            &lt;li&gt;Primer elemento&lt;/li&gt;<br>
-            &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
-            &lt;/ol&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;div&gt;</td>
-          <td>Define una sección de la página que se puede estilizar con CSS o manipular con JavaScript.</td>
-          <td>
-            &lt;div id="contenedor"&gt;Contenido aquí&lt;/div&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;span&gt;</td>
-          <td>Define una sección de texto que se puede estilizar con CSS o manipular con JavaScript.</td>
-          <td>
-            &lt;p&gt;Este es un texto de ejemplo con un &lt;span style="color: red"&gt;texto rojo&lt;/span&gt; dentro.&lt;/p&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;br&gt;</td>
-          <td>Crea una línea nueva dentro de un párrafo.</td>
-          <td>
-            &lt;p&gt;Este es un párrafo.&lt;br&gt;Esta es una nueva línea dentro del mismo párrafo.&lt;/p&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;hr&gt;</td>
-          <td>Crea una línea horizontal que separa secciones de la página.</td>
-          <td>
-            &lt;h2&gt;Sección 1&lt;/h2&gt; <br>
-            &lt;p&gt;Contenido de la sección 1.&lt;/p&gt; <br>
-            &lt;hr&gt; <br>
-            &lt;h2&gt;Sección 2&lt;/h2&gt; <br>
-            &lt;p&gt;Contenido de la sección 2.&lt;/p&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;strong&gt;</td>
-          <td>Hace que el texto sea más enfático o importante.</td>
-          <td>
-            &lt;p&gt;Este es un texto &lt;strong&gt;importante&lt;/strong&gt;.&lt;/p&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;em&gt;</td>
-          <td>Hace que el texto sea enfático o destacado.</td>
-          <td>
-            &lt;p&gt;Este es un texto &lt;em&gt;destacado&lt;/em&gt;.&lt;/p&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;blockquote&gt;</td>
-          <td>Crea una cita de texto que se muestra en un bloque separado.</td>
-          <td>&lt;blockquote&gt;Este es un texto citado.&lt;/blockquote&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;cite&gt;</td>
-          <td>Indica la fuente de una cita.</td>
-          <td>&lt;blockquote&gt;Este es un texto citado. &lt;cite&gt;Autor de la cita&lt;/cite&gt;&lt;/blockquote&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;form&gt;</td>
-          <td>Crea un formulario para que los usuarios ingresen datos o envíen información al servidor.</td>
-          <td>
-            &lt;form action="procesar.php" method="POST"&gt;<br>
-              &lt;label for="nombre"&gt;Nombre:&lt;/label&gt; <br>
-              &lt;input type="text" id="nombre" name="nombre"&gt; <br>
-              &lt;input type="submit" value="Enviar"&gt; <br>
-            &lt;/form&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;input&gt;</td>
-          <td>Crea un campo de entrada de formulario para que los usuarios ingresen datos.</td>
-          <td>
-            &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;<br>
-            &lt;input type="email" id="correo" name="correo"&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;textarea&gt;</td>
-          <td>Crea un campo de entrada de formulario para que los usuarios ingresen texto largo.</td>
-          <td>
-            &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt; <br>
-            &lt;textarea id="mensaje" name="mensaje"&gt;&lt;/textarea&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;button&gt;</td>
-          <td>Crea un botón que se puede hacer clic para realizar una acción.</td>
-          <td>&lt;button type="button" onclick="alert('Hola mundo!')"&gt;Haz clic aquí&lt;/button&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;table&gt;</td>
-          <td>Crea una tabla con filas y columnas.</td>
-          <td>
-            &lt;table&gt; <br>
-              &lt;tr&gt;<br>
-                &lt;td&gt;Celda 1&lt;/td&gt;<br>
-                &lt;td&gt;Celda 2&lt;/td&gt;<br>
-              &lt;/tr&gt;<br>
-             &lt;/table&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;thead&gt;</td>
-          <td>Crea la sección de encabezado de una tabla.</td>
-          <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;tbody&gt;</td>
-          <td>Crea la sección de cuerpo de una tabla.</td>
-          <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
-        </tr>
-        <tr>
-          <td>&lt;tfoot&gt;</td>
-          <td>Crea la sección de pie de una tabla.</td>
-          <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;tfoot&gt; &lt;tr&gt; &lt;td&gt;Total&lt;/td&gt; &lt;td&gt;$100&lt;/td&gt; &lt;/tr&gt; &lt;/tfoot&gt; &lt;/table&gt;</td>
-        </tr>
-        <td>&lt;th&gt;</td>
-        <td>Crea una celda de encabezado en una tabla.</td>
-        <td>&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Encabezado 1&lt;/th&gt; &lt;th&gt;Encabezado 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</td>
-      </tr>
-      <tr>
-        <td>&lt;col&gt;</td>
-        <td>Define las propiedades de una o varias columnas de una tabla.</td>
-        <td>&lt;table&gt; &lt;colgroup&gt; &lt;col span="2" style="background-color:red;"&gt; &lt;/colgroup&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
-      </tr>
-      <tr>
-        <td>&lt;colgroup&gt;</td>
-        <td>Agrupa las etiquetas &lt;col&gt; para definir las propiedades de varias columnas de una tabla.</td>
-        <td>&lt;table&gt; &lt;colgroup&gt; &lt;col span="2" style="background-color:red;"&gt; &lt;/colgroup&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
-      </tr>
-      <tr>
-        <td>&lt;caption&gt;</td>
-        <td>Define el título o leyenda de una tabla.</td>
-        <td>&lt;table&gt; &lt;caption&gt;Mi tabla&lt;/caption&gt; &lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</td>
-      </tr>
-      <tr>
-        <tr>
-          <td>article</td>
-          <td>Define un artículo independiente dentro de una página web</td>
-          <td>
-            &lt;article&gt;
-            &lt;h2h2&gt;Título del artículo &lt;/h2&gt;
-            &lt;ph2&gt;Contenido del artículo &lt;/p&gt;
-              &lt;/article&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>section</td>
-          <td>Define una sección lógica dentro de una página web</td>
-          <td>
-            &lt;section&gt;
-            &lt;h2>Título de la sección &lt;/h2&gt;
-            &lt;p>Contenido de la sección &lt;/p&gt;
-            &lt;/section&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>aside</td>
-          <td>Define un contenido adicional relacionado con el contenido principal de una página web</td>
-          <td>
-            &lt;article&gt;
-            &lt;h2>Título del artículo &lt;/h2&gt;
-            &lt;p>Contenido del artículo &lt;/p&gt;
-            &lt;/article&gt;
-            &lt;aside&gt;
-            &lt;h3>Contenido adicional &lt;/h3&gt;
-            &lt;p>Contenido relacionado con el artículo &lt;/p&gt;
-            &lt;/aside&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>footer</td>
-          <td>Define la sección de pie de página de una página web</td>
-          <td>
-            &lt;footer&gt;
-            &lt;p>Derechos de autor © 2023 - Mi sitio web &lt;/p&gt;
-            &lt;/footer&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>main</td>
-          <td>Define el contenido principal de una página web</td>
-          <td>
-            &lt;main&gt;
-            &lt;h1&gt;Título de la página &lt;/h1&gt;
-            &lt;p&gt;Contenido principal de la página &lt;/p&gt;
-            &lt;/main&gt;
-          </td>
-        </tr>
-        <tr>
-          <td>nav</td>
-          <td>Define un grupo de enlaces de navegación</td>
-          <td>
-            &lt;nav&gt;
-            &lt;ul&gt;
-            &lt;li&gt; &lt;a href="#"&gt;Inicio &lt;/a&gt; &lt;/li&gt;
-            &lt;li&gt; &lt;a href="#"&gt;Acerca de &lt;/a&gt; &lt;/li&gt;
-            &lt;li&gt; &lt;a href="#"&gt;Contacto &lt;/a&gt; &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/nav&gt;
-          </td>
-        </tr>
-        
-    </table>
- 
-      
-    <center>
-      <h1 id="codigo">AREA DE PRUEBAS</h1>
-    </center>
-    <div class="prueba">
-        <div id="editor"></div>
-        <div id="preview"></div>
-    </div>
-    
+  </table>
 
-      <script src="../../js/app.js"></script>
+  <center>
+    <h1 id="codigo">AREA DE PRUEBAS</h1>
+  </center>
 
-  </body>
+  <div class="prueba">
+    <div id="editor"></div>
+    <div id="preview"></div>
+  </div>
+
+  <script src="../../js/app.js"></script>
+
+</body>
+
 </html>

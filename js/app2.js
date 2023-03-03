@@ -42,10 +42,10 @@ function search() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const targetTop = rect.top + scrollTop - 100;
       window.scrollTo({ top: targetTop, behavior: 'smooth' });
-      
+
       closeSearch();
       return;
-    } else{
+    } else {
       closeSearch();
     }
   }

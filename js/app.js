@@ -10,7 +10,7 @@ editor.setValue(exampleHtml);
 
 actualizarVistaPrevia();
 
-editor.on("change", function() {
+editor.on("change", function () {
     actualizarVistaPrevia();
 });
 
@@ -25,10 +25,10 @@ function actualizarVistaPrevia() {
 
 // BOTON DE COPIAR EN LAS FILAS DE LA TERCER COLUMMNA
 
-  const copyTemplate = document.querySelector('#copy-template');
-  const copyCells = document.querySelectorAll('table td:last-child');
-  
-  copyCells.forEach(cell => {
+const copyTemplate = document.querySelector('#copy-template');
+const copyCells = document.querySelectorAll('table td:last-child');
+
+copyCells.forEach(cell => {
     const cellText = cell.textContent;
     const copyNode = document.importNode(copyTemplate.content, true);
     copyNode.querySelector('.cell-text').textContent = cellText;
@@ -36,13 +36,13 @@ function actualizarVistaPrevia() {
 
         var boton = e.target.querySelector('.tooltip');
         boton.textContent = '¡Copiado!';
-            setTimeout(function() {
-                boton.innerHTML = "Copiar";
-            }, 1000);
+        setTimeout(function () {
+            boton.innerHTML = "Copiar";
+        }, 1000);
 
-      navigator.clipboard.writeText(cellText);
+        navigator.clipboard.writeText(cellText);
     });
     cell.parentNode.replaceChild(copyNode, cell);
-  });
+});
 
 
