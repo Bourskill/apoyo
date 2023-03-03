@@ -4,42 +4,6 @@ H1{
     color: var(--font-white);
 }
 
-.introduccion{
-    width: 80%;
-    background: var(--fondo2);
-
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 30px;
-
-    color: var(--font-white);
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.introduccion div{
-    flex-grow: 1;
-}
-
-.gif{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gif img{
-    height: 200px;
-    object-fit: cover;
-    flex-grow: 1;
-}
-
-
 /* TABLA DE ETIQUETAS */
 
 .etiquetas{
@@ -129,27 +93,5 @@ td{
     font-size: 90%;
 }
 
-@media (max-width: 720px){
-    .introduccion{
-        width: 95%;
-    }
-    .etiquetas{
-        width: 100%;
-    }
-    .etiquetas td:nth-child(3) > span{
-        display: block;
-        padding: 15px;
-        margin-right: 25%;
-    }
-    .etiquetas button {
-        width:20%;
-        
-    }
-    .etiquetas button span{
-        display: none;
-    }
-    .etiquetas td:nth-child(1){
-        font-size: 90%;
-    }
-}
+
 
