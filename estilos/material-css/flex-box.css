@@ -1,0 +1,77 @@
+h1 {
+    margin: 50px;
+}
+
+.opciones-flex-content {
+    width: 80%;
+    margin: 50px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.opciones-flex-content button {
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+}
+
+.escenario1 {
+    width: 80%;
+    height: 350px;
+    margin: 50px auto;
+
+    display: flex;
+    gap: 15px;
+}
+
+.resultados, .opciones-flex {
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+}
+.opciones-flex{
+    flex-direction: column;
+}
+.opciones-flex button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.resultados{
+    align-items: flex-start;
+    border: 1px solid white;
+    padding: 10px;
+    overflow: hidden;
+}
+.resultados div {
+    counter-increment: carousel-cell;
+    background: var(--azul-css-2);
+}
+
+.resultados div:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: counter(carousel-cell);
+    font-size:20px;
+    padding: 20px;
+    color: white;
+}
+.info-flex{
+    width: 80%;
+    margin: 50px auto;
+}
+.info-flex ul{
+    margin-left: 15px;
+}
+.toggle-option{
+    transform: scale(1.1);
+    background: var(--azul-css-1);
+    color: white;
+}

@@ -81,7 +81,8 @@ body {
 
 .codigo-prueba:hover,
 .up:hover,
-.flex-button:hover {
+.flex-button:hover,
+.opciones-flex-content button:hover {
     transform: scale(1.1);
     background: var(--azul-css-2);
     color: white;
@@ -89,7 +90,8 @@ body {
 
 .codigo-prueba:active,
 .up:active,
-.flex-button:active {
+.flex-button:active,
+.opciones-flex-content button:active {
     transform: scale(0.8);
 }
 
@@ -152,7 +154,6 @@ body {
 
 /* CONTENEDORES DE INFORMACION/INTRO */
 
-.introduccion,
 .content-informacion {
     width: 80%;
     background: var(--fondo2);
@@ -163,21 +164,20 @@ body {
     padding: 30px;
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
 
 }
 
-.contenido,
 .info {
     flex-grow: 1;
 }
 
 .gif {
+     flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -190,6 +190,10 @@ body {
 /* RESPONSIVIDAD */
 
 @media (max-width: 720px) {
+    .content-informacion {
+        width: 95%;
+        flex-wrap: wrap;
+    }
     .contenedor button {
         max-height: 50px !important;
     }
