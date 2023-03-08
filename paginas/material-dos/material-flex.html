@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../../estilos/main.css">
     <link rel="stylesheet" href="../../estilos/material-css/flex-box.css">
 </head>
+
 <body>
 
     <center>
@@ -20,11 +22,21 @@
             <h3>¿Qué es flex-box y para qué sirve?</h3>
             <br>
             <p>
-                Flexbox es una forma de diseñar páginas web utilizando CSS. Es una herramienta que permite a los desarrolladores web organizar y distribuir elementos en una página de manera más fácil y flexible. <br><br>
-                Imagínate que estás organizando tus juguetes en tu habitación. Si los pones todos en una línea, algunos juguetes pueden ser demasiado grandes o pequeños y no se verán bien juntos. Si los pones en una pila, algunos juguetes pueden estar ocultos detrás de otros y no podrás verlos todos. <br><br>
-                Con flexbox, puedes organizar tus elementos como si fueran juguetes en una habitación, pero en lugar de una habitación, es una página web. Puedes ajustar el tamaño y la posición de cada elemento según tus necesidades, para que se vean bien juntos y se ajusten a la pantalla de cualquier dispositivo. <br><br>
-                Por ejemplo, si tienes un menú de navegación en tu página web, puedes usar flexbox para colocar los elementos del menú uno al lado del otro en una línea horizontal o en una columna vertical. También puedes ajustar el espacio entre los elementos y el espacio alrededor del menú para que se vea bien y sea fácil de usar en diferentes dispositivos. <br><br>
-                En resumen, flexbox es una herramienta útil que te permite diseñar páginas web más fácilmente, organizando y distribuyendo los elementos en una página de manera flexible y adaptable.
+                Flexbox es una forma de diseñar páginas web utilizando CSS. Es una herramienta que permite a los
+                desarrolladores web organizar y distribuir elementos en una página de manera más fácil y flexible.
+                <br><br>
+                Imagínate que estás organizando tus juguetes en tu habitación. Si los pones todos en una línea, algunos
+                juguetes pueden ser demasiado grandes o pequeños y no se verán bien juntos. Si los pones en una pila,
+                algunos juguetes pueden estar ocultos detrás de otros y no podrás verlos todos. <br><br>
+                Con flexbox, puedes organizar tus elementos como si fueran juguetes en una habitación, pero en lugar de
+                una habitación, es una página web. Puedes ajustar el tamaño y la posición de cada elemento según tus
+                necesidades, para que se vean bien juntos y se ajusten a la pantalla de cualquier dispositivo. <br><br>
+                Por ejemplo, si tienes un menú de navegación en tu página web, puedes usar flexbox para colocar los
+                elementos del menú uno al lado del otro en una línea horizontal o en una columna vertical. También
+                puedes ajustar el espacio entre los elementos y el espacio alrededor del menú para que se vea bien y sea
+                fácil de usar en diferentes dispositivos. <br><br>
+                En resumen, flexbox es una herramienta útil que te permite diseñar páginas web más fácilmente,
+                organizando y distribuyendo los elementos en una página de manera flexible y adaptable.
             </p>
         </div>
         <div class="gif">
@@ -56,8 +68,7 @@
     </div>
 
     <div class="escenario1" id="escenario1">
-        <div class="opciones-flex">
-        </div>
+        <div class="opciones-flex"></div>
         <div class="resultados">
             <div></div>
             <div></div>
@@ -68,26 +79,128 @@
         </div>
     </div>
 
-    <div class="info-flex">
+    <div class="info-flex"></div>
+    
+
+    <template id="direction">
         <p>
-          <b>flex-direction:</b> Esta propiedad establece la dirección principal en la que se colocan los elementos flexibles en un contenedor. Puede tomar uno de los siguientes valores:<br> <br>
+            <b>flex-direction:</b> Esta propiedad establece la dirección principal en la que se colocan los elementos
+            flexibles en un contenedor. Puede tomar uno de los siguientes valores:<br> <br>
         </p>
         <ul>
             <li>
                 <b>row:</b> Los elementos se colocan en filas (de izquierda a derecha por defecto). <br> <br>
             </li>
             <li>
-                <b>row-reverse:</b> Los elementos se colocan en filas, pero en orden inverso (de derecha a izquierda). <br> <br>
+                <b>row-reverse:</b> Los elementos se colocan en filas, pero en orden inverso (de derecha a izquierda).
+                <br> <br>
             </li>
             <li>
                 <b>column:</b> Los elementos se colocan en columnas (de arriba hacia abajo por defecto). <br> <br>
             </li>
             <li>
-               <b>column-reverse:</b> Los elementos se colocan en columnas, pero en orden inverso (de abajo hacia arriba).
+                <b>column-reverse:</b> Los elementos se colocan en columnas, pero en orden inverso (de abajo hacia
+                arriba).
             </li>
         </ul>
-    </div>
-   <script src="../../js/app3.js"></script>
-    
+    </template>
+
+     <template id="justify">
+        <p>
+            <b>justify-content:</b> es una propiedad de CSS que se utiliza para alinear y distribuir elementos en el eje
+            horizontal (horizontalmente) en un contenedor. A continuación se detallan las diferentes propiedades que se
+            pueden usar con justify-content: <br><br>
+        </p>
+        <ul>
+            <li>
+                <b>flex-start:</b> Alinea los elementos en el extremo izquierdo del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>flex-end:</b> Alinea los elementos en el extremo derecho del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>center:</b> Alinea los elementos en el centro del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>space-between:</b> Distribuye los elementos de manera uniforme en el contenedor, dejando espacio en
+                blanco entre los elementos. <br> <br>
+            </li>
+            <li>
+                <b>space-around:</b> Distribuye los elementos de manera uniforme en el contenedor, dejando espacio en
+                blanco alrededor de los elementos. <br> <br>
+            </li>
+            <li>
+                <b>space-evenly:</b> Distribuye los elementos de manera uniforme en el contenedor, incluyendo espacio en
+                blanco alrededor y entre los elementos.
+            </li>
+        </ul>
+    </template>
+
+    <template id="align">
+        <p>
+            <b>Align-items:</b> se utiliza para alinear los elementos de un contenedor a lo largo del eje transversal
+            (eje perpendicular al eje principal) del contenedor. Algunas de sus propiedades son: <br><br>
+        </p>
+        <ul>
+            <li>
+                <b>stretch:</b> Estira los elementos para llenar el contenedor a lo largo del eje transversal. <br> <br>
+            </li>
+            <li>
+                <b>center:</b> Centra los elementos a lo largo del eje transversal del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>flex-start:</b> Alinea los elementos al principio del eje transversal del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>flex-end:</b> Alinea los elementos al final del eje transversal del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>baseline:</b> Alinea los elementos según su línea base, que es la línea en la que se apoyan las
+                letras.
+            </li>
+        </ul>
+    </template>
+
+    <template id="wrap">
+        <p>
+            <b>Flex Wrap</b> es una propiedad de CSS que se utiliza para controlar el comportamiento de los elementos
+            flexibles cuando no caben en un contenedor. A continuación se presentan algunas de sus propiedades: <br><br>
+        </p>
+        <ul>
+            <li>
+                <b>nowrap:</b> esta es la configuración predeterminada, lo que significa que los elementos flexibles se
+                ajustarán a lo largo de una sola línea, incluso si esto significa que los elementos se superponen o se
+                desbordan del contenedor. <br> <br>
+            </li>
+            <li>
+                <b>wrap:</b> con esta configuración, los elementos flexibles se ajustarán automáticamente a varias
+                líneas cuando el ancho del contenedor sea demasiado pequeño para acomodarlos en una sola línea. <br>
+                <br>
+            </li>
+            <li>
+                <b>wrap-reverse:</b> esta configuración es similar a la anterior, pero los elementos se ordenan de forma
+                inversa en las líneas adicionales.
+            </li>
+        </ul>
+    </template>
+
+    <template id="flow">
+        <p>
+            <b>flex-flow:</b> es una propiedad CSS abreviada que combina las propiedades flex-direction y flex-wrap.
+            <br><br>
+        </p>
+        <ul>
+            <li>
+                <b>Ejemplo</b> <code>flex-flow: flex-direction flex-wrap;</code>
+            </li>
+            <li>
+                <b>Ejemplo</b> <code>flex-flow: center wrap;</code>
+            </li>
+        </ul>
+    </template>
+
+    <script src="../../js/app3.js"></script>
+
 </body>
+
 </html>

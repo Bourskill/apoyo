@@ -35,6 +35,7 @@ h1 {
 }
 .opciones-flex{
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .opciones-flex button{
     padding: 10px;

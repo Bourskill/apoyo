@@ -2,7 +2,7 @@ var direction = ["row", "row-reverse", "column", "column-reverse"];
 var justify = ["flex-start", "flex-end", "center", "space-between", "space-araund"];
 var align = ["stretch", "flex-start", "flex-end", "center", "baseline"];
 var wrap = ["nowrap", "wrap", "wrap-reverse"];
-var flow = ["holi"]
+var flow = ["holi"];
 
 var botonesContent = [direction, justify, align, wrap, flow];
 var countBotonContent = 0;
@@ -10,6 +10,8 @@ var countBotonContent = 0;
 
 const opcionesFlexContent = document.querySelectorAll(".opciones-flex-content button");
 const opcionesContent = document.querySelector(".opciones-flex");
+const infoFlexContent = document.querySelector(".info-flex");
+const templaterContent = document.querySelectorAll("template");
 
 opcionesFlexContent.forEach((element,i) => {
     countBotonContent++;
@@ -24,12 +26,16 @@ opcionesFlexContent.forEach((element,i) => {
 
 const opcionesFlex = (a) => {
     opcionesContent.innerHTML = "";
+    infoFlexContent.innerHTML = "";
     botonesContent[a].forEach(element => {
         var boton = document.createElement("button");
         var span = document.createElement("span");
         var textS = document.createTextNode(element)
+
         span.appendChild(textS);
         boton.appendChild(span);
         opcionesContent.appendChild(boton);
     });
+    var contenidoText = templaterContent[a].content.cloneNode(true);
+    infoFlexContent.appendChild(contenidoText);
 };
