@@ -14,7 +14,7 @@
 :root {
     --fondo: rgb(13, 11, 24);
     --fondo2: rgb(16, 14, 31);
-    --fondo3:rgb(5 4 14);
+    --fondo3: rgb(5 4 14);
     --font-white: rgb(223, 223, 223);
     --rojo-html-1: #e34c26;
     --rojo-html-2: #f06529;
@@ -28,6 +28,7 @@ html {
 
 body {
     background: var(--fondo);
+    color: var(--font-white);
     font-family: 'Montserrat', sans-serif;
     scroll-margin-top: 100px;
 }
@@ -38,7 +39,6 @@ body {
     /* Ancho de la barra */
     background-color: transparent;
     /* Fondo transparente */
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -49,33 +49,47 @@ body {
 }
 
 /* BOTONES */
-.codigo-prueba,.up{
+.codigo-prueba,
+.up,
+.flex-button {
     padding: 10px;
     position: fixed;
     border-radius: 10px;
+
+    text-align: center;
+    color: var(--fondo);
+
     cursor: pointer;
     transition: .2s;
-    z-index: 999;
-    text-align: center;
+    z-index: 9999;
 }
-.codigo-prueba i,.up i{
-    color: var(--fondo);
+
+.codigo-prueba i,
+.up i {
     font-size: 2em;
 }
-.codigo-prueba{
+
+.codigo-prueba {
     right: 15px;
     bottom: 100px;
 }
-.up{
+
+.up {
     right: 18px;
     bottom: 30px;
 }
 
-.codigo-prueba:hover, .up:hover{
+.codigo-prueba:hover,
+.up:hover,
+.flex-button:hover {
     transform: scale(1.1);
-    color: #ff79c6;
+    background: var(--azul-css-2);
+    color: white;
 }
-.codigo-prueba:active, .up:active{
+
+.codigo-prueba:active,
+.up:active,
+.flex-button:active {
     transform: scale(0.8);
 }
 
@@ -138,7 +152,8 @@ body {
 
 /* CONTENEDORES DE INFORMACION/INTRO */
 
-.introduccion, .content-informacion{
+.introduccion,
+.content-informacion {
     width: 80%;
     background: var(--fondo2);
 
@@ -146,8 +161,6 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     padding: 30px;
-
-    color: var(--font-white);
 
     display: flex;
     flex-wrap: wrap;
@@ -157,17 +170,18 @@ body {
 
 }
 
-.contenido, .info{
+.contenido,
+.info {
     flex-grow: 1;
 }
 
-.gif{
+.gif {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.gif img{
+.gif img {
     height: 200px;
     object-fit: cover;
     flex-grow: 1;
@@ -175,29 +189,35 @@ body {
 
 /* RESPONSIVIDAD */
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
     .contenedor button {
         max-height: 50px !important;
     }
-    .introduccion{
+
+    .introduccion {
         width: 95%;
     }
-    .etiquetas{
+
+    .etiquetas {
         width: 100%;
     }
-    .etiquetas td:nth-child(3) > span{
+
+    .etiquetas td:nth-child(3)>span {
         display: block;
         padding: 15px;
         margin-right: 25%;
     }
+
     .etiquetas button {
-        width:20%;
-        
+        width: 20%;
+
     }
-    .etiquetas button span{
+
+    .etiquetas button span {
         display: none;
     }
-    .etiquetas td:nth-child(1){
+
+    .etiquetas td:nth-child(1) {
         font-size: 90%;
     }
 }

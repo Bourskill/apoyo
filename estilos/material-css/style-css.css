@@ -1,66 +1,68 @@
-
-#titulo{
-  scroll-margin-top:  50px ;
-  color: var(--font-white);
+#titulo {
+  scroll-margin-top: 50px;
   margin-top: 50px;
+}
+
+.flex-button {
+  position: absolute;
+  right: 15px;
+  top: 15px
 }
 
 /* TABLA DE PROPIEDADES */
 .propiedades {
-    width: 80%;
+  width: 80%;
 
-    margin: 50px auto;
-    margin-top: 50px;
-    padding: 20px;
+  margin: 50px auto;
+  margin-top: 50px;
+  padding: 20px;
 
-    color: var(--font-white);
+  background: var(--fondo2);
 
-    background: var(--fondo2);
-
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
-
 
 td,
 th {
-    border: 7px solid var(--fondo);
+  border: 7px solid var(--fondo);
 }
 
 th {
-    padding: 30px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 td {
-    padding: 10px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
+  padding: 10px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .propiedades table {
-    width: 100%;
-    background: var(--fondo);
-    border-collapse: collapse;
+  width: 100%;
+  background: var(--fondo);
+  border-collapse: collapse;
 }
 
 .propiedades table td {
-    width: 50%;
+  width: 50%;
 }
 
 .test>tr:nth-child(odd) {
-    text-align: center;
+  text-align: center;
 }
 
 .test>tr:nth-child(odd) :first-child {
   background-color: var(--azul-css-2);
-    width: 40%; 
-}
-.test>tr:nth-child(odd) :first-child span{
- font-size: 105%;
- font-weight: 500;
+  width: 40%;
 }
 
-.test>tr:nth-child(even)  {
+.test>tr:nth-child(odd) :first-child span {
+  font-size: 105%;
+  font-weight: 500;
+}
+
+.test>tr:nth-child(even) {
   background-color: var(--fondo3);
 }
 
@@ -68,22 +70,24 @@ td {
   background-color: var(--fondo3);
   margin: 20px 0px 20px 0px;
 }
+
 .test>tr:nth-child(even) table td {
   border: none;
   outline: none;
 }
+
 .test>tr:nth-child(even) table tr :first-child {
- width: 35%;
+  width: 35%;
 }
 
 
 @media (max-width: 720px) {
-    .propiedades {
-        width: 95%;
-    }
+  .propiedades {
+    width: 95%;
+  }
 }
 
-.b-busqueda{
+.b-busqueda {
   width: 80%;
   margin: 50px auto;
   background: var(--fondo2);
@@ -98,75 +102,76 @@ td {
   top: 10px;
   z-index: 999999;
 }
-.barra{
+
+.barra {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 #search-bar {
-    width: 80%;
-    padding: 10px;
+  width: 80%;
+  padding: 10px;
 
-    font-size: 16px;
-     
-    border-radius: 5px;
-    border: none;
-    outline: none;
+  font-size: 16px;
 
-    transition: box-shadow 0.3s;
-  }
-  
-  #search-bar:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  #search-button {
-    width: 15%;
-    height: 40px;
-    background-color: var(--azul-css-2);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #search-button:hover {
-    background-color: #0062cc;
-  }
-  
-  /* Estilos para las sugerencias */
-  
-  #search-results {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: none;
+  outline: none;
 
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
+  transition: box-shadow 0.3s;
+}
 
-    list-style: none;
+#search-bar:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-    max-height: 150px;
-    overflow-y: auto;
-  }
-  
-  #search-results li {
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #search-results li:hover {
-    background-color: #f2f2f2;
-  }
-  
-  #search-results li.selected {
-    background-color: #007bff;
-    color: #fff;
-  }
+#search-button {
+  width: 15%;
+  height: 40px;
+  background-color: var(--azul-css-2);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #0062cc;
+}
+
+/* Estilos para las sugerencias */
+
+#search-results {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+
+  list-style: none;
+
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#search-results li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-results li:hover {
+  background-color: #f2f2f2;
+}
+
+#search-results li.selected {
+  background-color: #007bff;
+  color: #fff;
+}
